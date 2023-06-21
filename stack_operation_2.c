@@ -33,8 +33,8 @@ void sub_s(stack_t **stack, unsigned int L_number)
 	int result;
 
 	sub_error(*stack, L_number);
-	result = (*stack)->n - (*stack)->next->n;
-	pop_s(stack, 0);
+	result = (*stack)->next->n - (*stack)->n;
+	pop_s(stack, L_number);
 	(*stack)->n = result;
 }
 /**
@@ -49,7 +49,7 @@ void mul_s(stack_t **stack, unsigned int L_number)
 
 	mul_error(*stack, L_number);
 	result = (*stack)->n * (*stack)->next->n;
-	pop_s(stack, 0);
+	pop_s(stack, L_number);
 	(*stack)->n = result;
 }
 /**
@@ -63,7 +63,7 @@ void div_s(stack_t **stack, unsigned int L_number)
 	int result;
 
 	div_error(*stack, L_number, (*stack)->n);
-	result = (*stack)->n / (*stack)->next->n;
-	pop_s(stack, 0);
+	result = (*stack)->next->n / (*stack)->n;
+	pop_s(stack, L_number);
 	(*stack)->n = result;
 }

@@ -10,7 +10,7 @@ void mod_s(stack_t **stack, unsigned int L_number)
 	int result;
 
 	mod_error(*stack, L_number, (*stack)->n);
-	result = (*stack)->n / (*stack)->next->n;
-	pop_s(stack, 0);
+	result = (*stack)->next->n % (*stack)->n;
+	pop_s(stack, L_number);
 	(*stack)->n = result;
 }
