@@ -8,7 +8,7 @@
  */
 void div_error(stack_t *stack, unsigned int L_number, int number)
 {
-	if (len(stack) < 2 || stack->next->n == NULL || stack == NULL)
+	if (len(stack) < 2 || stack->next == NULL || stack == NULL)
 	{
 		fprintf(stderr, "L%d: can't div, stack too short\n", L_number);
 		_exit_m(stack);
