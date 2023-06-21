@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "main.h"
+#include "monty.h"
 /**
  * read_file - this will read the file.
  * @file_name: the name of the file given by the main function.

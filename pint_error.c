@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * pint_error - print the error related to the pint
  * @stack: the stack.

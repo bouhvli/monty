@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * check_instruction - check the presence of an instruction.
  * @inst: the instraction.

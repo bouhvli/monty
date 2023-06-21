@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * div_error - will print error msg if the length of the stack less than 2,
  * or number of the first element in the stack = 0.

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * _exit_m - exit the program when it's called.
  * @stack: takes the stack.

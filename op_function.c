@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * op_function - check if the instruction from the file is the right one
  * and return it.

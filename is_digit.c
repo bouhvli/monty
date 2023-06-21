@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * _isdigit - check if the given string is number or not.
  * @c: the string.

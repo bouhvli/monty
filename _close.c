@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * _close_file - as the name says.
  * @file_disc: takes the file decriptor.

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * check_fopen - check if the file is open or not.
  * @stack: the stack.

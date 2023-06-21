@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * mul_error - check the length is its less than 2,
  * print error msg.

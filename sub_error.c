@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * sub_error - the error message for the sub instruction.
  * @stack: the stack.

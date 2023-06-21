@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * swap_error - the error msg for the swap instruction.
  * @stack: the stack.

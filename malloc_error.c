@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * malloc_error - check if the allocation is a success or not.
  * @stack: the stack to check.

@@ -1,4 +1,4 @@
-#include "main.h"
+#include "monty.h"
 /**
  * mod_error - check the length and number if its less than 2 and number == 0,
  * print error message.
