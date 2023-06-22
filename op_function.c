@@ -15,7 +15,7 @@ instruction_t op_function(char *command)
 		{"sub", sub_s}, {"div", div_s},
 		{"mul", mul_s}, {"mod", mod_s},
 		{"pchar", pchar_s}, {"pstr", pstr_s},
-		{"rotl", rotl_s},{"rotr", rotr_s},
+		{"rotl", rotl_s}, {"rotr", rotr_s},
 		{"nop", nop_s}, {NULL, NULL},
 	};
 	instruction_t default_isnt = {NULL, NULL};
