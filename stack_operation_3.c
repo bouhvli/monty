@@ -21,3 +21,28 @@ void pchar_s(stack_t **stack, unsigned int L_number)
 	pchar_error(*stack, L_number);
 	printf("%c\n", (*stack)->n);
 }
+/**
+ * pstr_s - prints the string starting at the top of the stack,
+ * followed by a new line.
+ * @stack: the stack.
+ * @L_number: the number of the line.
+*/
+void pstr_s(stack_t **stack,
+__attribute__ ((unused))unsigned int L_number)
+{
+	stack_t *tmp = *stack;
+
+	if (len(tmp) != 0)
+	{
+		while (tmp)
+		{
+			if ((tmp->n > 0 || tmp->n < 127) && tmp->n != 0)
+				printf("%c", tmp->n);
+			else
+				break;
+			tmp = tmp->next;
+		}
+	}
+	printf("\n");
+}
+
