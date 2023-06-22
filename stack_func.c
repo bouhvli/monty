@@ -104,5 +104,6 @@ int delete_at_index(stack_t **stack, unsigned int index)
 			fast->prev = slow;
 	}
 	free(tmp);
+	tmp = NULL;
 	return (1);
 }

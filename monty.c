@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "monty.h"
+FILE *file;
 /**
  * read_file - this will read the file.
  * @file_name: the name of the file given by the main function.
@@ -10,13 +11,13 @@
  */
 void read_file(const char *file_name)
 {
-	FILE *file = fopen(file_name, "r");
 	char line[MAX_LINE_LENGTH];
 	char *token;
 	int L_number = 1;
 	instruction_t o;
 	stack_t *stack = NULL;
 
+	file = fopen(file_name, "r");
 	if (file == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file %s\n", file_name);

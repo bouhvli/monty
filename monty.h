@@ -9,7 +9,7 @@
 #include <string.h>
 #define MAX_LINE_LENGTH 1024
 #define DELIMITER " \t\n"
-
+extern FILE *file;
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -64,6 +64,7 @@ void sub_error(stack_t *stack, unsigned int L_number);
 void mul_error(stack_t *stack, unsigned int L_number);
 void div_error(stack_t *stack, unsigned int L_number, int number);
 void mod_error(stack_t *stack, unsigned int L_number, int number);
+void pchar_error(stack_t *stack, unsigned int L_number);
 /*stack operations */
 void push_s(stack_t **stack, unsigned int L_number);
 void pall_s(stack_t **stack, unsigned int L_number);
@@ -76,4 +77,5 @@ void mul_s(stack_t **stack, unsigned int L_number);
 void div_s(stack_t **stack, unsigned int L_number);
 void mod_s(stack_t **stack, unsigned int L_number);
 void nop_s(stack_t **stack, unsigned int L_number);
+void pchar_s(stack_t **stack, unsigned int L_number);
 #endif
