@@ -36,7 +36,7 @@ __attribute__ ((unused))unsigned int L_number)
 	{
 		while (tmp)
 		{
-			if ((tmp->n > 0 || tmp->n <= 127) && tmp->n != 0)
+			if (isprint(tmp->n) && tmp->n != 0)
 				printf("%c", tmp->n);
 			else
 				break;
