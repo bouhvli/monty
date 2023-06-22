@@ -8,11 +8,8 @@ void push_s(stack_t **stack, unsigned int L_number)
 {
 	char *number;
 	int converted_number;
-	stack_t *new_stack;
 
 	converted_number = 0;
-	new_stack = malloc(sizeof(stack_t));
-	malloc_error(&new_stack);
 	number = strtok(NULL, DELIMITER);
 	if (number != NULL && _isdigit(number) != 0)
 	{
@@ -21,7 +18,6 @@ void push_s(stack_t **stack, unsigned int L_number)
 	}
 	else
 		push_error(*stack, L_number);
-	free(new_stack);
 }
 /**
  * pall_s - prints all the values on the stack,
