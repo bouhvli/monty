@@ -45,4 +45,19 @@ __attribute__ ((unused))unsigned int L_number)
 	}
 	printf("\n");
 }
+/**
+ * rotl_s - prints the string starting at the top of the stack,
+ * followed by a new line.
+ * @stack: the stack.
+ * @L_number: the number of the line.
+*/
+void rotl_s(stack_t **stack, unsigned int L_number)
+{
+	int tmp_val;
 
+	if (len(*stack) < 2 || stack == NULL)
+		return;
+	tmp_val = (*stack)->n;
+	pop_s(stack, L_number);
+	add_end(stack, tmp_val);
+}

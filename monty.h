@@ -79,4 +79,5 @@ void mod_s(stack_t **stack, unsigned int L_number);
 void nop_s(stack_t **stack, unsigned int L_number);
 void pchar_s(stack_t **stack, unsigned int L_number);
 void pstr_s(stack_t **stack, unsigned int L_number);
+void rotl_s(stack_t **stack, unsigned int L_number);
 #endif
